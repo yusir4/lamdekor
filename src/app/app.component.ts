@@ -8,12 +8,22 @@ import { Howl, Howler } from 'howler';
 })
 export class AppComponent {
   title = 'lamdekor';
+  sound: any;
+  clicked = false;
+
   constructor() {
-    let sound = new Howl({
+    this.sound = new Howl({
       src: ['assets/music.mp3']
     });
-    sound.loop(0);
-    sound.volume(0.2);
-    sound.play()
+    this.sound.load();
+    this.sound.volume(0.2);
   }
+
+  playMusic() {
+    if (!this.clicked) {
+      this.sound.play()
+    }
+    this.clicked = true;
+  }
+
 }
