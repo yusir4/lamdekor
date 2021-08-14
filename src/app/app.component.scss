@@ -1,0 +1,44 @@
+body {
+     background: #000;
+}
+/* .izle {
+     border:1px solid red;
+}*/
+ .hareket {
+     color: #5dea62;
+     font-family: Monaco, monospace;
+     font-size: 24px;
+     width: 100%;
+     text-align: left;
+}
+ span {
+     animation: 1.5s infinite normal imlec;
+}
+ ::-moz-selection {
+     background: #7021d2;
+     color: #fff;
+}
+ ::selection {
+     background: #7021d2;
+     color: #fff;
+}
+ @keyframes imlec {
+     0% {
+         opacity: 0;
+         left: 0;
+    }
+     40% {
+         opacity: 0;
+         left: -2px;
+    }
+     80% {
+         opacity: 1;
+         left: -2px;
+    }
+}
+ .bilmm {
+     display:inline-block;
+     position: absolute;
+     top: 45%;
+     left: calc(50% - 200px);
+}
